@@ -1,2 +1,2 @@
-# Data_Course_LINESThis README file contains information about my uploaded assignments
+# Data_Course_LINES
 This README file contains information about my uploaded assignments
