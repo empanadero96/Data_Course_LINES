@@ -1,0 +1,69 @@
+getwd()
+
+#find all csv files in ./Data?
+?list.files
+csv_files <- list.files(path ="Data",
+                  pattern = ".csv",
+                  recursive = TRUE,
+                  full.names = TRUE)
+
+#How many are there?
+length(csv_files)
+length(1:10)
+
+#Find just the wingspan data set
+wing <- list.files(path="Data",recursive = TRUE,full.names = TRUE,
+           pattern = "wingspan_vs_mass.csv")
+
+#Load that data set
+read.csv(file = wing)
+df <- read.csv(file=wing)
+
+#Look at first 5
+head(df)
+head(df,5)
+?head
+
+# ^ means starts with
+# $ means ends with
+# * means 0-inf of anything
+
+#the dumb way of reading in all 3 files' first lines
+list.files(path="data",
+           full.names = TRUE,
+           recursive = TRUE,
+           pattern = "^b.*b$")
+readLines("data/data-shell/creatures/basilisk.dat",n=1)
+readLines("data/data-shell/data/pdb/benzaldehyde.pdb",n=1)
+readLines("data/Messy_Take2/b_df.csv",n=1)
+
+#slightly better way, no copy pasting required
+x <- list.files(path ="data",
+                full.names=TRUE,
+                recursive=TRUE,
+                pattern = "^b")
+readLines(x[1],n=1) # use [] notation to access those results
+readLines(x[2],n=1) # one at a time, like a chimpanzee would do it
+readLines(x[3],n=1)
+
+readLines("data/data-shell/creatures/basilisk.dat",n=1)
+
+#for-loop
+for(eachfile in x){
+  print(readLines(eachfile,n=1))
+}
+
+for(x in 1:10){
+  print(paste0)
+}
+
+for(i in 1:10){
+  print(paste0("your mom is ",i))
+}
+
+#do the for loop thing for all csv files
+
+for(eachfile in csv_files){
+  print(readLines(eachfile,n=1))
+}
+  
