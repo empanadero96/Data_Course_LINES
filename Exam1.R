@@ -54,13 +54,3 @@ p2 <- ggplot(data = state_max_fatality_rate,
 
 p2
 
-class(data$Last_Update)
-
-class(data$Last_Update)
-
-library(lubridate)
-
-data$Last_Update <- as.Date(data$Last_Update , "%m/%d/%y")
-
-?as.Date
-
