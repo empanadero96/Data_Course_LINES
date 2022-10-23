@@ -20,7 +20,7 @@ dat %>%
 #Task3
 
 p1 <- dat %>%
-  pivot_longer(cols = starts_with("Hr"), names_to = "Hour", values_to = "Absorbance") %>%
+  pivot_longer(cols = starts_with("Hr"), names_to = "Hour", values_to = "Absorbance", names_prefix = "Hr_") %>%
   mutate(Source = case_when(
     startsWith(`Sample ID`, "S") ~ "soil",
     startsWith(`Sample ID`, "C") ~ "water",
@@ -29,6 +29,8 @@ p1 <- dat %>%
   facet_wrap(~Substrate)
 
 p1
+
+#task4
 
 
 
