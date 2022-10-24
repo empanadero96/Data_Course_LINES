@@ -1,0 +1,11 @@
+My idea for a data analysis final project is comparing various splits for different track and field events, looking at average times/speeds, and making a prediction based on a the data obtained for the best strategies and when to start the kick (A term used to describe the final sprint near the end of a race). 
+
+The data I will be analyzing will include sections of the races, or "splits". For example in the 800m dash, I will look at splits for the 100m, 200m, 300m, 400m, 500m, 600m, and 700m split. The comparisons I will make with this data will be used to analyze and predict how a runner should run. Many questions can be answered with this in-depth analysis. Some examples of questions are listed below:
+
+Are the runners in the 800m dash who ran the 200m-300m split with a faster average time the 400m-500m split more likely to win the race?
+
+Are the runners who started the kick with 100m remaining going to finish before those who started 125m before the finish line?
+
+Is it worth conserving your energy until the final stretch of the race?
+
+Fortunately, a lot of data is available for this project. Almost every aspect of the summer olympics track and field has been studied, documented, analyzed, etc. However the analytics detailing the splits between different races has not been detailed enough, and I plan to use R to create my final project showing and answer some of these questions. 
