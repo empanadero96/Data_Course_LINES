@@ -53,9 +53,10 @@ p1 <- Utah %>%
                                    hjust =)) +
   theme(axis.text.y = element_text(size = 4))
 
+# view p1
 p1
 
-#p2, showing county by religion % (opposite of p1)
+# p2, showing county by religion % (opposite of p1)
 p2 <- Utah %>% 
   ggplot(mapping = aes(x = Religion,y = Percent_of_population)) +
   geom_point() +
@@ -66,6 +67,7 @@ p2 <- Utah %>%
                                    hjust =)) +
   theme(axis.text.y = element_text(size = 4))
 
+# View p2
 p2
 
 # religious/non-religious vs population
@@ -78,6 +80,7 @@ p3 <- Utah %>%
                                    hjust =)) +
   theme(axis.text.y = element_text(size = 4))
 
+# view p3
 p3
 
 
